@@ -44,10 +44,10 @@ public class ShiftsController : ControllerBase
         {
             _logger.LogInformation($"{DateTime.UtcNow.ToString("hh:mm:ss tt")}: Shift with id '{id}' was not found!");
 
-            // Return 400 status with appropriate or empty body
+            // Return 404 status with appropriate or empty body
             return new ContentResult
             {
-                StatusCode = 400,
+                StatusCode = 404,
                 Content = $"{{\"message\": \"Shift with id '{id}' was not found!\"}}",
                 ContentType = "application/json"
             };
@@ -85,10 +85,10 @@ public class ShiftsController : ControllerBase
         {
             _logger.LogInformation($"{DateTime.UtcNow.ToString("hh:mm:ss tt")}: Shift with id '{id}' was not found!");
 
-            // Return 400 status with appropriate or empty body
+            // Return 404 status with appropriate or empty body
             return new ContentResult
             {
-                StatusCode = 400,
+                StatusCode = 404,
                 Content = $"{{\"message\": \"Shift with id '{id}' was not found!\"}}",
                 ContentType = "application/json"
             };
@@ -113,10 +113,10 @@ public class ShiftsController : ControllerBase
         {
             _logger.LogInformation($"{DateTime.UtcNow.ToString("hh:mm:ss tt")}: Shift with id '{id}' was not found!");
 
-            // Return 400 status with appropriate or empty body
+            // Return 4 status with appropriate or empty body
             return new ContentResult
             {
-                StatusCode = 400,
+                StatusCode = 404,
                 Content = $"{{\"message\": \"Shift with id '{id}' was not found!\"}}",
                 ContentType = "application/json"
             };
